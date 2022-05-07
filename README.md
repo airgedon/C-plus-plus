@@ -26,3 +26,31 @@ find /usr/bin/ -name 'g++'
     "version": 4
 }
 ```
+# Compile
+```
+g++ -E square.cpp -o square_preproccessed.cpp
+```
+```
+g++ -E source.cpp -o source_preproccessed.cpp
+```
+>neither
+```
+g++ -c source.cpp
+```
+```
+g++ -c square.cpp
+```
+```
+g++ source.o square.o -o program
+```
+> or
+```
+g++ source.cpp square.cpp -o program
+```
+> Assembly version
+```
+ g++ -S square.cpp
+```
+```
+c++filt -n _Z6squarei
+```
